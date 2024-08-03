@@ -5,15 +5,29 @@
   "main": "index.html",
   "scripts": {
     "test": "jest"
-  }, 
+  },
   "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.3",
+    "@babel/preset-react": "^7.24.7",
+    "babel-jest": "^29.7.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0"
   },
   "jest": {
-    "testEnvironment": "jsdom"
+    "testEnvironment": "jsdom",
+    "collectCoverage": true,
+    "coverageDirectory": "coverage",
+    "coverageReporters": ["text", "html"],
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
   },
-  "keywords": [],
+  "keywords": [
+    "game",
+    "guess",
+    "number"
+  ],
   "author": "",
   "license": "ISC"
 }
