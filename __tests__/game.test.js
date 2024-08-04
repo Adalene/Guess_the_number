@@ -1,4 +1,12 @@
-/**
+// __tests__/example.test.js (Run this simple test to ensure Jest is set up correctly)
+test('basic arithmetic', () => {
+    expect(1 + 1).toBe(2);
+  });
+
+
+  // tests
+
+  /**
  * @jest-environment jsdom
  */
 
