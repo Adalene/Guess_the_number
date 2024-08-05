@@ -32,6 +32,7 @@ export function checkGuess() {
 
 export function restartGame() {
     startGame();
+    
     // document.getElementById('guess').value = '';
 }
 
